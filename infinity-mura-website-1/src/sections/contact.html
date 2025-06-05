@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Infinity Mura</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background: #232f3e;">
+            <a class="navbar-brand" href="../index.html" style="color:#1a73e8;">Infinity Mura</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html" style="color:#e9f1fb;">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html" style="color:#e9f1fb;">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html" style="color:#e9f1fb;">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html" style="color:#34c759;">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="contact-hero text-center py-5" style="background: linear-gradient(120deg, #1a73e8 60%, #34c759 100%); color: #fff; animation: fadeInDown 1s;">
+            <div class="container">
+                <h1 class="display-4 font-weight-bold mb-3" style="animation: fadeIn 1.2s;">Contact Us</h1>
+                <p class="lead" style="animation: fadeIn 1.5s;">We'd love to hear from you! Fill out the form below or reach us through our social channels.</p>
+            </div>
+        </section>
+        <section class="container py-5 d-flex justify-content-center align-items-center" style="animation: fadeInUp 1.5s; min-height: 400px;">
+            <div class="col-lg-8 col-md-10 col-12 p-4 shadow rounded" style="background: #fff;">
+                <form>
+                    <div class="form-group">
+                        <label for="name" class="font-weight-bold" style="color:#1a73e8;">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="font-weight-bold" style="color:#1a73e8;">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="font-weight-bold" style="color:#1a73e8;">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" style="background:#34c759;border:none;font-weight:600;">Send Message</button>
+                </form>
+                <div class="text-center mt-4">
+                    <p class="mb-2 font-weight-bold" style="color:#1a73e8;">Or connect with us:</p>
+                    <a href="#" class="mx-2" aria-label="Twitter"><img src="../images/twitter.svg" alt="Twitter" width="32"></a>
+                    <a href="#" class="mx-2" aria-label="LinkedIn"><img src="../images/linkedin.svg" alt="LinkedIn" width="32"></a>
+                    <a href="#" class="mx-2" aria-label="Facebook"><img src="../images/facebook.svg" alt="Facebook" width="32"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="text-center mt-5" style="background: #232f3e; color: #e9f1fb; padding: 1.2rem 0; font-size: 1rem; letter-spacing: 1px;">
+        <p>&copy; 2023 Infinity Mura. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

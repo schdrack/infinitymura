@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Mura - Portfolio</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background: #232f3e;">
+            <a class="navbar-brand" href="../index.html" style="color:#1a73e8;">Infinity Mura</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html" style="color:#e9f1fb;">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html" style="color:#e9f1fb;">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="portfolio.html" style="color:#34c759;">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" style="color:#e9f1fb;">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="portfolio-hero text-center py-5" style="background: linear-gradient(120deg, #1a73e8 60%, #34c759 100%); color: #fff; animation: fadeInDown 1s;">
+            <div class="container">
+                <h1 class="display-4 font-weight-bold mb-3" style="animation: fadeIn 1.2s;">Our Portfolio</h1>
+                <p class="lead" style="animation: fadeIn 1.5s;">Here are some of the projects we have worked on:</p>
+            </div>
+        </section>
+        <section class="container py-5" style="animation: fadeInUp 1.5s;">
+            <!-- Filter Buttons -->
+            <div class="text-center mb-4">
+                <button class="btn btn-outline-primary mx-1 filter-btn active" data-filter="all">All</button>
+                <button class="btn btn-outline-success mx-1 filter-btn" data-filter="web">Web Development</button>
+                <button class="btn btn-outline-info mx-1 filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="btn btn-outline-secondary mx-1 filter-btn" data-filter="software">Software</button>
+            </div>
+            <div class="row" id="portfolio-gallery">
+                <div class="col-md-4 mb-4 portfolio-item" data-category="web">
+                    <div class="card h-100 shadow border-0" style="transition: transform 0.3s;">
+                        <img src="../images/portfolio1.jpg" class="card-img-top" alt="NextGen Web Portal" style="height:220px;object-fit:cover;">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold" style="color:#1a73e8;">NextGen Web Portal</h5>
+                            <p class="card-text">A scalable web platform for enterprise collaboration and workflow automation.</p>
+                            <span class="badge badge-primary">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 portfolio-item" data-category="mobile">
+                    <div class="card h-100 shadow border-0" style="transition: transform 0.3s;">
+                        <img src="../images/portfolio2.jpg" class="card-img-top" alt="HealthTrack App" style="height:220px;object-fit:cover;">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold" style="color:#1a73e8;">HealthTrack App</h5>
+                            <p class="card-text">A cross-platform mobile app for health monitoring and fitness tracking.</p>
+                            <span class="badge badge-info">Mobile Apps</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 portfolio-item" data-category="software">
+                    <div class="card h-100 shadow border-0" style="transition: transform 0.3s;">
+                        <img src="../images/portfolio3.jpg" class="card-img-top" alt="Custom ERP Suite" style="height:220px;object-fit:cover;">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold" style="color:#1a73e8;">Custom ERP Suite</h5>
+                            <p class="card-text">A tailored ERP solution for inventory, sales, and HR management.</p>
+                            <span class="badge badge-secondary">Software</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional Projects -->
+                <div class="col-md-4 mb-4 portfolio-item" data-category="web">
+                    <div class="card h-100 shadow border-0" style="transition: transform 0.3s;">
+                        <img src="../images/portfolio4.jpg" class="card-img-top" alt="E-Commerce Platform" style="height:220px;object-fit:cover;">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold" style="color:#1a73e8;">E-Commerce Platform</h5>
+                            <p class="card-text">A robust online store with integrated payment and inventory management.</p>
+                            <span class="badge badge-primary">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 portfolio-item" data-category="mobile">
+                    <div class="card h-100 shadow border-0" style="transition: transform 0.3s;">
+                        <img src="../images/portfolio5.jpg" class="card-img-top" alt="EduLearn Mobile" style="height:220px;object-fit:cover;">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold" style="color:#1a73e8;">EduLearn Mobile</h5>
+                            <p class="card-text">An educational app for interactive learning and student engagement.</p>
+                            <span class="badge badge-info">Mobile Apps</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 portfolio-item" data-category="software">
+                    <div class="card h-100 shadow border-0" style="transition: transform 0.3s;">
+                        <img src="../images/portfolio6.jpg" class="card-img-top" alt="Analytics Dashboard" style="height:220px;object-fit:cover;">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold" style="color:#1a73e8;">Analytics Dashboard</h5>
+                            <p class="card-text">A real-time analytics dashboard for business intelligence and reporting.</p>
+                            <span class="badge badge-secondary">Software</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 portfolio-item" data-category="web">
+                    <div class="card h-100 shadow border-0" style="transition: transform 0.3s;">
+                        <img src="../images/portfolio7.jpg" class="card-img-top" alt="Startup Landing Page" style="height:220px;object-fit:cover;">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold" style="color:#1a73e8;">Startup Landing Page</h5>
+                            <p class="card-text">A modern, responsive landing page for a tech startup launch.</p>
+                            <span class="badge badge-primary">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 portfolio-item" data-category="mobile">
+                    <div class="card h-100 shadow border-0" style="transition: transform 0.3s;">
+                        <img src="../images/portfolio8.jpg" class="card-img-top" alt="Travel Buddy App" style="height:220px;object-fit:cover;">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold" style="color:#1a73e8;">Travel Buddy App</h5>
+                            <p class="card-text">A travel planning and itinerary app with real-time recommendations.</p>
+                            <span class="badge badge-info">Mobile Apps</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 portfolio-item" data-category="software">
+                    <div class="card h-100 shadow border-0" style="transition: transform 0.3s;">
+                        <img src="../images/portfolio9.jpg" class="card-img-top" alt="HR Management Tool" style="height:220px;object-fit:cover;">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold" style="color:#1a73e8;">HR Management Tool</h5>
+                            <p class="card-text">A comprehensive HR tool for recruitment, onboarding, and employee management.</p>
+                            <span class="badge badge-secondary">Software</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="text-center mt-5" style="background: #232f3e; color: #e9f1fb; padding: 1.2rem 0; font-size: 1rem; letter-spacing: 1px;">
+        <p>&copy; 2023 Infinity Mura. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Portfolio filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                const filter = this.getAttribute('data-filter');
+                document.querySelectorAll('.portfolio-item').forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        setTimeout(() => item.classList.add('fadeIn'), 10);
+                    } else {
+                        item.style.display = 'none';
+                        item.classList.remove('fadeIn');
+                    }
+                });
+            });
+        });
+
+        // Card hover animation
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-8px) scale(1.03)';
+                card.style.boxShadow = '0 8px 32px rgba(26,115,232,0.12)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+                card.style.boxShadow = '';
+            });
+        });
+    </script>
+</body>
+</html>

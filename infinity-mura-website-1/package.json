@@ -1,0 +1,22 @@
+{
+  "name": "infinity-mura-website",
+  "version": "1.0.0",
+  "description": "Infinity Mura - Innovative Tech Solutions",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "website",
+    "bootstrap",
+    "responsive",
+    "tech solutions"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Mura - Innovative Tech Solutions</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+            background: linear-gradient(135deg, #e9f1fb 0%, #f6fafd 100%);
+            color: #222e3a;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            transition: background 0.5s;
+        }
+
+        header {
+            background: #232f3e;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            padding: 0;
+        }
+
+        .navbar {
+            background: transparent !important;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 2rem;
+            color: #1a73e8 !important;
+            letter-spacing: 2px;
+            transition: color 0.3s;
+        }
+
+        .navbar-brand:hover {
+            color: #34c759 !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #e9f1fb !important;
+            font-weight: 500;
+            margin-right: 10px;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+            color: #34c759 !important;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #1a73e8 60%, #34c759 100%);
+            color: #fff;
+            padding: 120px 0 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInDown 1s;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            animation: fadeIn 1.2s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0;}
+            to { opacity: 1;}
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            animation: fadeIn 1.5s;
+        }
+
+        .hero .btn-primary {
+            background: #34c759;
+            border: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 12px 32px;
+            border-radius: 30px;
+            box-shadow: 0 2px 16px rgba(52,199,89,0.15);
+            transition: background 0.3s, transform 0.2s;
+            animation: fadeInUp 1.7s;
+        }
+
+        .hero .btn-primary:hover {
+            background: #1a73e8;
+            color: #fff;
+            transform: translateY(-2px) scale(1.04);
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+
+        .introduction {
+            padding: 60px 0 40px 0;
+            background: #fff;
+            border-radius: 0 0 24px 24px;
+            box-shadow: 0 4px 24px rgba(26,115,232,0.04);
+            margin-top: -40px;
+            z-index: 2;
+            position: relative;
+            animation: fadeIn 2s;
+        }
+
+        .introduction h2 {
+            color: #1a73e8;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .introduction p {
+            color: #222e3a;
+            font-size: 1.15rem;
+        }
+
+        footer {
+            background: #232f3e;
+            color: #e9f1fb;
+            text-align: center;
+            padding: 1.2rem 0;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            margin-top: 40px;
+            box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+            animation: fadeIn 2.5s;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 991px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .introduction {
+                padding: 40px 0 20px 0;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .hero {
+                padding: 70px 0 40px 0;
+            }
+            .introduction {
+                margin-top: -20px;
+                border-radius: 0 0 12px 12px;
+            }
+            .navbar-brand {
+                font-size: 1.3rem;
+            }
+        }
+
+        /* Accessibility */
+        a:focus, button:focus, input:focus, textarea:focus {
+            outline: 2px solid #1a73e8;
+            outline-offset: 2px;
+            box-shadow: 0 0 0 2px #34c75933;
+            transition: box-shadow 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Infinity Mura</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="sections/about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sections/services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sections/portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sections/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero text-center">
+            <div class="container">
+                <h1>Welcome to Infinity Mura</h1>
+                <p>Your partner in innovative tech solutions.</p>
+                <a href="sections/services.html" class="btn btn-primary">Explore Our Services</a>
+            </div>
+        </section>
+        
+        <section class="introduction">
+            <div class="container">
+                <h2>About Infinity Mura</h2>
+                <p>At Infinity Mura, we specialize in providing cutting-edge technology solutions tailored to your needs. Our team of experts is dedicated to delivering exceptional results that drive success.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="text-center">
+        <p>&copy; 2023 Infinity Mura. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

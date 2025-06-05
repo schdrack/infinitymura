@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Infinity Mura</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Animations for About Page */
+        .fadeInUpCustom {
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeInUpCustom 1s forwards;
+        }
+        .fadeInUpCustom.delay-1 { animation-delay: 0.3s; }
+        .fadeInUpCustom.delay-2 { animation-delay: 0.6s; }
+        .fadeInUpCustom.delay-3 { animation-delay: 0.9s; }
+        .fadeInUpCustom.delay-4 { animation-delay: 1.2s; }
+        @keyframes fadeInUpCustom {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background: #232f3e;">
+            <a class="navbar-brand" href="../index.html" style="color:#1a73e8;">Infinity Mura</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link active" href="about.html" style="color:#34c759;">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html" style="color:#e9f1fb;">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html" style="color:#e9f1fb;">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" style="color:#e9f1fb;">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-hero text-center py-5" style="background: linear-gradient(120deg, #1a73e8 60%, #34c759 100%); color: #fff; animation: fadeInDown 1s;">
+            <div class="container">
+                <h1 class="display-4 font-weight-bold mb-3" style="animation: fadeIn 1.2s;">About Infinity Mura</h1>
+                <p class="lead" style="animation: fadeIn 1.5s;">Innovative Tech Solutions for a Digital Future</p>
+            </div>
+        </section>
+        <section class="container py-5" style="animation: fadeInUp 1.5s; max-width: 900px;">
+            <div class="row">
+                <div class="col-md-7 mb-4">
+                    <div class="p-4 shadow rounded fadeInUpCustom delay-1" style="background: #fff;">
+                        <h2 class="font-weight-bold" style="color:#1a73e8;">Our Mission</h2>
+                        <p>To empower businesses with innovative technology solutions that enhance productivity and drive growth.</p>
+                        <h2 class="font-weight-bold mt-4" style="color:#1a73e8;">Our Vision</h2>
+                        <p>To be a leader in the tech industry, recognized for our commitment to excellence and customer satisfaction.</p>
+                        <h2 class="font-weight-bold mt-4" style="color:#1a73e8;">Our Story</h2>
+                        <p>Founded by passionate technologists, Infinity Mura has grown into a trusted partner for companies seeking digital transformation. Our team thrives on creativity, collaboration, and a relentless pursuit of quality.</p>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-4 d-flex align-items-center">
+                    <div class="w-100 p-4 shadow rounded fadeInUpCustom delay-2" style="background: #f6fafd;">
+                        <h3 class="font-weight-bold mb-3" style="color:#34c759;">Meet Our Team</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <strong style="color:#1a73e8;">Alex Kim</strong> – CEO & Lead Architect<br>
+                                <span style="color:#222e3a;">Visionary leader with 15+ years in software innovation.</span>
+                            </li>
+                            <li class="mb-3">
+                                <strong style="color:#1a73e8;">Priya Patel</strong> – Head of Development<br>
+                                <span style="color:#222e3a;">Expert in scalable web and mobile solutions.</span>
+                            </li>
+                            <li class="mb-3">
+                                <strong style="color:#1a73e8;">Samuel Lee</strong> – UX/UI Designer<br>
+                                <span style="color:#222e3a;">Passionate about user-centered design and accessibility.</span>
+                            </li>
+                            <li>
+                                <strong style="color:#1a73e8;">Fatima Zahra</strong> – Client Success Manager<br>
+                                <span style="color:#222e3a;">Ensures every client achieves their digital goals.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="p-4 shadow rounded fadeInUpCustom delay-3" style="background: #e9f1fb;">
+                        <h3 class="font-weight-bold mb-3" style="color:#1a73e8;">Internship Opportunities</h3>
+                        <p>We provide internship opportunities for students and recent graduates in the tech field. Join us to gain hands-on experience, mentorship, and a chance to work on real-world projects. <a href="contact.html" style="color:#34c759; font-weight:600;">Contact us</a> to learn more!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center mt-5" style="background: #232f3e; color: #e9f1fb; padding: 1.2rem 0; font-size: 1rem; letter-spacing: 1px;">
+        <p>&copy; 2023 Infinity Mura. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
